@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": ">=14.15.0"
+    "node": "14.15.0"
   },
   "cacheDirectories": [
     "node_modules",
@@ -16,6 +16,7 @@
     "client": "cd client && npm start",
     "postinstall": "cd client && npm install",
     "build": "NODE_ENV=production cd client/ && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "start-server": "node index.js"
   },
   "keywords": [],
