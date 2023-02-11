@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 const StyledLoginContainer = styled.main`
   display: flex;
@@ -25,16 +25,25 @@ const StyledLoginButton = styled.a`
 `;
 
 const LOGIN_URI =
-  process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:8888/login'
-    : 'https://spotification.herokuapp.com/login';
+  process.env.NODE_ENV !== "production"
+    ? "http://localhost:8888/login"
+    : "https://spotification.herokuapp.com/login";
 
 const Login = () => (
-  <StyledLoginContainer>
-    <StyledLoginButton href={LOGIN_URI}>
-      Log in to Spotify
-    </StyledLoginButton>
-  </StyledLoginContainer>
+  <>
+    <StyledLoginContainer>
+      <StyledLoginButton href={LOGIN_URI}>Log in to Spotify</StyledLoginButton>
+    </StyledLoginContainer>
+    <div>
+      Due to the restrictions of Spotify's development mode, you may not be able
+      to access your account if you have not previously been granted access. If
+      that's the case, try:
+    </div>
+    <div>
+      Email Address: spotification12345@gmail.com
+      Password: testaccount12345!
+    </div>
+  </>
 );
 
 export default Login;
