@@ -33,16 +33,14 @@ const Login = () => (
   <>
     <StyledLoginContainer>
       <StyledLoginButton href={LOGIN_URI}>Log in to Spotify</StyledLoginButton>
+      <div>
+        Due to the restrictions of Spotify's development mode, you may not be
+        able to access your account if you have not previously been granted
+        access. If that's the case, try:
+      </div>
+      <div>Email Address: spotification12345@gmail.com</div>
+      <div>Password: testaccount12345!</div>
     </StyledLoginContainer>
-    <div>
-      Due to the restrictions of Spotify's development mode, you may not be able
-      to access your account if you have not previously been granted access. If
-      that's the case, try:
-    </div>
-    <div>
-      Email Address: spotification12345@gmail.com
-      Password: testaccount12345!
-    </div>
   </>
 );
 
