@@ -19,7 +19,7 @@ const StyledDescription = styled.div`
   font-weight: 200;
   font-size: var(--fz-lg);
   padding: var(--spacing-xl) var(--spacing-xl);
-  margin: 25px 400px;
+  margin: 0px 400px;
 `;
 
 const StyledLoginButton = styled.a`
@@ -30,7 +30,7 @@ const StyledLoginButton = styled.a`
   font-weight: 700;
   font-size: var(--fz-lg);
   padding: var(--spacing-sm) var(--spacing-xl);
-  margin: 100px;
+  margin: 50px 0px;
 
   &:hover,
   &:focus {
