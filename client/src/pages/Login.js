@@ -8,6 +8,20 @@ const StyledLoginContainer = styled.main`
   height: 100vh;
 `;
 
+const GreenText = styled.div`
+  color: var(--green);
+`;
+
+const StyledDescription = styled.div`
+  display: inline-block;
+  text-align: center;
+  color: var(--white);
+  font-weight: 200;
+  font-size: var(--fz-lg);
+  padding: var(--spacing-xl) var(--spacing-xl);
+  margin: 25px 400px;
+`;
+
 const StyledLoginButton = styled.a`
   display: inline-block;
   background-color: var(--green);
@@ -16,6 +30,7 @@ const StyledLoginButton = styled.a`
   font-weight: 700;
   font-size: var(--fz-lg);
   padding: var(--spacing-sm) var(--spacing-xl);
+  margin: 100px;
 
   &:hover,
   &:focus {
@@ -33,13 +48,18 @@ const Login = () => (
   <>
     <StyledLoginContainer>
       <StyledLoginButton href={LOGIN_URI}>Log in to Spotify</StyledLoginButton>
-      <div>
+      <StyledDescription>
         Due to the restrictions of Spotify's development mode, you may not be
         able to access your account if you have not previously been granted
-        access. If that's the case, try:
-      </div>
-      <div>Email Address: spotification12345@gmail.com</div>
-      <div>Password: testaccount12345!</div>
+        access. If that's the case, try: <br />
+        <br />
+        Email Address: <GreenText>spotification12345@gmail.com</GreenText>{" "}
+        <br />
+        Password: <GreenText>testaccount12345!</GreenText>
+        <br />
+        To request access to your account, please send your spotify email to
+        q.lambkin@gmail.com
+      </StyledDescription>
     </StyledLoginContainer>
   </>
 );
