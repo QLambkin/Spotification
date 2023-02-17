@@ -47,7 +47,6 @@ const LOGIN_URI =
 const Login = () => (
   <>
     <StyledLoginContainer>
-      <StyledLoginButton href={LOGIN_URI}>Log in to Spotify</StyledLoginButton>
       <StyledDescription>
         Due to the restrictions of Spotify's development mode, you may not be
         able to access your account if you have not previously been granted
@@ -60,6 +59,7 @@ const Login = () => (
         To request access to your account, please send your spotify email to
         q.lambkin@gmail.com
       </StyledDescription>
+      <StyledLoginButton href={LOGIN_URI}>Log in to Spotify</StyledLoginButton>
     </StyledLoginContainer>
   </>
 );
